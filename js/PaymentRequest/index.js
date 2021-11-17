@@ -284,11 +284,11 @@ export default class PaymentRequest {
 
     if(this._paymentMethod === 'PKPaymentMethodTypeCredit') {
       this._details = this._creditDebitDetails.credit;
-    }
-    else if (this._paymentMethod === 'PKPaymentMethodTypeDebit') {
+    } else if (this._paymentMethod === 'PKPaymentMethodTypeDebit') {
       this._details = this._creditDebitDetails.debit;
-    }
-    else {
+    } else if (this._paymentMethod === 'PKPaymentMethodTypeUnknown') {
+      this._details = this._creditDebitDetails.credit;
+    } else {
       // to-do: handle other card, which is covered in another ticket
       // https://trello.com/c/jXpIHzT6/2280-investigate-apm-mobile-only-show-up-the-supported-cards
 
