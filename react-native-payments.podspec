@@ -15,5 +15,9 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
 
   s.dependency 'React'
-  s.dependency 'Stripe', '~> 19'
+
+  # Stripe support on this fork is completely untested. This change to depend on
+  # stripe 23 is to fix simulator build issues in our app. We do not use stripe,
+  # and I make no guarantee that this works.
+  s.dependency 'Stripe', '~> 23'
 end
