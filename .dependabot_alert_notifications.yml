@@ -1,0 +1,18 @@
+# Configures slack notifications for dependabot alerts.
+
+enabled: true
+
+filter:
+  action:
+    - created
+    - reopened
+    - reintroduced
+    - auto_reopened
+
+  severity:
+    - critical
+    - high
+
+notify:
+  slack:
+    channel: '#resident-mobile-dependabot'
