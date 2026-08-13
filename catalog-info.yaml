@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: react-native-payments
+  description: "Accept Payments with Apple Pay and Android Pay using the Payment Request API."
+spec:
+  type: library
+  lifecycle: stable
+  owner: CODEOWNERS
