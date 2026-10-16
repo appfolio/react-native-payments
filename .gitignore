@@ -47,3 +47,4 @@ jsconfig.json
 # project
 #
 coverage
+tmp/
